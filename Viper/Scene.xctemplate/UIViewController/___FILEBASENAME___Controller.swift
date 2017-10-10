@@ -36,7 +36,7 @@ class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter.updateView()
+        presenter.updateView()
         
     }
     

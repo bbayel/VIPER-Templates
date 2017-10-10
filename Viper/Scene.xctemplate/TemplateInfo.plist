@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___Controller</string>
 			<key>Description</key>
 			<string>The view controller name</string>
 			<key>Identifier</key>
