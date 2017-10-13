@@ -17,7 +17,6 @@ import UIKit
 
 protocol ___VARIABLE_sceneName___ViewInterface : class {
 
-    func display(viewModel : ___VARIABLE_sceneName___Model)
 }
 
 
@@ -36,15 +35,11 @@ class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.updateView()
-        
+       
     }
     
     
     // MARK: ___VARIABLE_sceneName___ViewInterface
 
-    func display(viewModel: ___VARIABLE_sceneName___Model) {
-
-    }
     
 }

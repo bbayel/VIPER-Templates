@@ -9,15 +9,10 @@
 
 import Foundation
 
-struct ___VARIABLE_sceneName___Model {
-    
-}
-
 /*
  * Protocol that defines the commands sent from the View to the Presenter.
  */
 protocol ___VARIABLE_sceneName___ModuleInterface {
-    func updateView();
 }
 
 /*
@@ -36,8 +31,5 @@ struct  ___VARIABLE_sceneName___Presenter : ___VARIABLE_sceneName___ModuleInterf
 
     // MARK: ___VARIABLE_sceneName___ModuleInterface
 
-    func updateView() {
-        // fetch datas from interactor
-    }
         
 }
