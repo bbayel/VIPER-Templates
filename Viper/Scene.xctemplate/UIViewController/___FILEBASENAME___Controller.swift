@@ -26,7 +26,7 @@ protocol ___VARIABLE_sceneName___ViewInterface : class {
  */
 class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___, ___VARIABLE_sceneName___ViewInterface {
     
-    var presenter : ___VARIABLE_sceneName___ModuleInterface
+    var presenter : ___VARIABLE_sceneName___ModuleInterface!
     
     
     /*
