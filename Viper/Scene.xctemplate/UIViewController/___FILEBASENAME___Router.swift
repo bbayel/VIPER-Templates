@@ -25,7 +25,7 @@ protocol ___VARIABLE_sceneName___RouterInput {
 struct ___VARIABLE_sceneName___Router : ___VARIABLE_sceneName___RouterInput
 {
     // Reference to the ViewController (weak to avoid retain cycle).
-    weak var viewController: ___VARIABLE_sceneName___Controller!
+    weak var viewController: ___VARIABLE_sceneName___Controller?
     
     static func instantiateController() -> ___VARIABLE_sceneName___Controller {
         let view = ___VARIABLE_sceneName___Controller(nibName: "___VARIABLE_sceneName___Controller", bundle: nil)
