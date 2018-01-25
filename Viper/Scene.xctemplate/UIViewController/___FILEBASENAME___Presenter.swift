@@ -19,17 +19,24 @@ protocol ___VARIABLE_sceneName___ModuleInterface {
  * The Presenter is also responsible for connecting
  * the other objects inside a VIPER module.
  */
-struct  ___VARIABLE_sceneName___Presenter : ___VARIABLE_sceneName___ModuleInterface {
+class  ___VARIABLE_sceneName___Presenter : ___VARIABLE_sceneName___ModuleInterface {
 
     // Reference to the Router
-    var router: ___VARIABLE_sceneName___Router!
+    var router: ___VARIABLE_sceneName___Router
     // Reference to the Interactor's interface.
-    var interactor: ___VARIABLE_sceneName___InteractorInput!
+    var interactor: ___VARIABLE_sceneName___InteractorInput
     // Reference to the View (weak to avoid retain cycle).
-    weak var view: ___VARIABLE_sceneName___ViewInterface!
+    weak var view: ___VARIABLE_sceneName___ViewInterface?
 
 
     // MARK: ___VARIABLE_sceneName___ModuleInterface
-
+    
+    init(router:___VARIABLE_sceneName___Router, interactor:___VARIABLE_sceneName___InteractorInput, view:___VARIABLE_sceneName___ViewInterface) {
+        
+        self.router = router
+        self.interactor = interactor
+        self.view = view
+        
+    }
         
 }
