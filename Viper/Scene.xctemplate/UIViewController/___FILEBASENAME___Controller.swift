@@ -38,6 +38,10 @@ class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___
        
     }
     
+    deinit {
+        presenter = nil
+    }
+    
     
     // MARK: ___VARIABLE_sceneName___ViewInterface
 
