@@ -7,7 +7,6 @@
 //
 //
 
-
 import Foundation
 import UIKit
 import RxSwift
@@ -22,7 +21,7 @@ class ___VARIABLE_sceneName___Controller: ___VARIABLE_viewControllerSubclass___,
     
     var presenter: ___VARIABLE_sceneName___ModuleInterface!
     
-    // MARK: -  View LifeCycle
+    // MARK: - View LifeCycle
         deinit {
         print("Deinit \(self)")
     }

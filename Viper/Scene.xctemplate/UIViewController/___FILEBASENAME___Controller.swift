@@ -7,7 +7,6 @@
 //
 //
 
-
 import Foundation
 import UIKit
 
@@ -19,7 +18,6 @@ protocol ___VARIABLE_sceneName___ViewInterface : class {
 
 }
 
-
 /*
  * A view responsible for displaying a list
  * of articles fetched from some source.
@@ -27,7 +25,6 @@ protocol ___VARIABLE_sceneName___ViewInterface : class {
 class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___, ___VARIABLE_sceneName___ViewInterface {
     
     var presenter : ___VARIABLE_sceneName___ModuleInterface!
-    
     
     /*
      * Once the view is loaded, it sends a command
@@ -42,8 +39,6 @@ class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___
         presenter = nil
     }
     
-    
     // MARK: ___VARIABLE_sceneName___ViewInterface
 
-    
 }

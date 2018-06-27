@@ -11,7 +11,6 @@ import Foundation
 import RxSwift
 
 struct ___VARIABLE_sceneName___ViewModel {
-
     
 }
 

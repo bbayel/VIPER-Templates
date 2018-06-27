@@ -24,7 +24,6 @@ protocol ___VARIABLE_sceneName___RouterInput {
     func go(to route: ___VARIABLE_sceneName___Route)
 }
 
-
 struct ___VARIABLE_sceneName___Router:  ___VARIABLE_sceneName___RouterInput {
     
     private weak var controller: ___VARIABLE_sceneName___Controller?
@@ -45,6 +44,5 @@ struct ___VARIABLE_sceneName___Router:  ___VARIABLE_sceneName___RouterInput {
 //
 //        }
     }
-    
     
 }
