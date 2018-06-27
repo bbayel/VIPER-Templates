@@ -13,19 +13,16 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-protocol ___VARIABLE_sceneName___Intents : class {
+protocol ___VARIABLE_sceneName___Intents: class {
 	func loadIntent() -> Observable<Void> 
-    func display(viewModel : ___VARIABLE_sceneName___ViewModel)
+    func display(viewModel: ___VARIABLE_sceneName___ViewModel)
 }
 
-
-
-class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___, ___VARIABLE_sceneName___Intents {
+class ___VARIABLE_sceneName___Controller: ___VARIABLE_viewControllerSubclass___, ___VARIABLE_sceneName___Intents {
     
-    var presenter : ___VARIABLE_sceneName___ModuleInterface!
+    var presenter: ___VARIABLE_sceneName___ModuleInterface!
     
-    
-    //MARK:-  View LifeCycle
+    // MARK: -  View LifeCycle
         deinit {
         print("Deinit \(self)")
     }
@@ -35,14 +32,13 @@ class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___
         presenter.attach()
         
     }
-    
 
-    //MARK:- RxIntents
+    // MARK: - RxIntents
     func loadIntent() -> Observable<Void> {
     	return Observable.just(())
     }
 
-    //MARK:- Display
+    // MARK: - Display
     func display(viewModel: ___VARIABLE_sceneName___ViewModel) {
 
     }
