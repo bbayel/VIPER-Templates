@@ -10,35 +10,23 @@
 import Foundation
 import UIKit
 
-/*
- * Protocol that defines the view input methods.
- */
-
 protocol ___VARIABLE_sceneName___ViewInterface : class {
-
+    func display(_ viewModel: ___VARIABLE_sceneName___ViewModel)
 }
 
-/*
- * A view responsible for displaying a list
- * of articles fetched from some source.
- */
 class ___VARIABLE_sceneName___Controller : ___VARIABLE_viewControllerSubclass___, ___VARIABLE_sceneName___ViewInterface {
     
     var presenter : ___VARIABLE_sceneName___ModuleInterface!
-    
-    /*
-     * Once the view is loaded, it sends a command
-     * to the presenter asking it to update the UI.
-     */
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
     
     deinit {
         presenter = nil
     }
     
-    // MARK: ___VARIABLE_sceneName___ViewInterface
+    func display(_ viewModel: ___VARIABLE_sceneName___ViewModel) {
+    }
 
 }
