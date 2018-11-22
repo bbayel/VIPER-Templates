@@ -7,20 +7,19 @@
 //
 //
 
-
 import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
 
-protocol ___VARIABLE_sceneName___Intents: RxIntents {
+protocol ___VARIABLE_sceneName___Intents: class {
 	func loadIntent() -> Observable<Void>
     func display(viewModel: ___VARIABLE_sceneName___Model)
 }
 
 class ___VARIABLE_sceneName___Controller: ___VARIABLE_viewControllerSubclass___ {
 
-    var presenter: ___VARIABLE_sceneName___Presenter!
+    var presenter: ___VARIABLE_sceneName___PresenterIntents!
 
     // MARK: - View LifeCycle
     deinit {
@@ -30,7 +29,6 @@ class ___VARIABLE_sceneName___Controller: ___VARIABLE_viewControllerSubclass___ 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attach()
-
     }
 }
 
@@ -43,16 +41,5 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___Intents {
 
     // MARK: - Display
     func display(viewModel: ___VARIABLE_sceneName___Model) {
-        switch viewModel {
-        case .loading:
-            addLoader()
-            break
-        case .display:
-            removeLoader()
-            break
-        case .error:
-            removeLoader()
-            break
-        }
     }
 }

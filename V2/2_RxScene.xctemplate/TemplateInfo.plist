@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>
-	<string>This generates a new scene using Uncle Bob&apos;s clean architecture. It consists of the view controller, interactor, presenter, and router. You can then create individual workers to supplement the interactor.</string>
+	<string>This generates a new scene using clean architecture. It consists of the view controller, presenter, and router.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -41,20 +41,6 @@
 			<string>viewControllerName</string>
 			<key>Name</key>
 			<string>View Controller Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Interactor</string>
-			<key>Description</key>
-			<string>The interactor name</string>
-			<key>Identifier</key>
-			<string>interactorName</string>
-			<key>Name</key>
-			<string>Interactor Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -120,6 +106,6 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>This generates a new scene using Uncle Bob&apos;s clean architecture.</string>
+	<string>This generates a new scene using clean architecture.</string>
 </dict>
 </plist>
