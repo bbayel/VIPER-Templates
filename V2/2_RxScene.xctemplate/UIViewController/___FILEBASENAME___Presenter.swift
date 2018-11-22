@@ -32,7 +32,6 @@ class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterIntent
          viewController: ___VARIABLE_sceneName___Intents,
          scheduler: SchedulerType = MainScheduler.instance) {
         self.router = router
-        self.interactor = interactor
         self.viewController = viewController
         self.scheduler = scheduler
     }
