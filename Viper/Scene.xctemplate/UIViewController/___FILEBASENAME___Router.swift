@@ -10,11 +10,11 @@
 import Foundation
 import UIKit
 
-protocol ___VARIABLE_sceneName___RouterInput {
+enum ___VARIABLE_sceneName___Route {
+    
 }
 
-struct ___VARIABLE_sceneName___Router : ___VARIABLE_sceneName___RouterInput
-{
+struct ___VARIABLE_sceneName___Router {
     weak var controller: ___VARIABLE_sceneName___Controller?
     
     static func instantiateController() -> ___VARIABLE_sceneName___Controller {
@@ -25,4 +25,10 @@ struct ___VARIABLE_sceneName___Router : ___VARIABLE_sceneName___RouterInput
         return controller
     }
 
+    func go(_ route: ___VARIABLE_sceneName___Route) {
+//        switch route {
+//            
+//        }
+    }
+    
 }
